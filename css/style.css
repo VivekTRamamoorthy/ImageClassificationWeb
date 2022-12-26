@@ -1,0 +1,70 @@
+*,*::before,*::after{
+    box-sizing: border-box;
+    margin:0;
+
+}
+html{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.1rem;;
+}
+
+h1{
+    color:dodgerblue;
+    background-color: #222;
+    padding:.5rem;
+    text-align: center;
+}
+canvas{
+    width:50vw;
+    height:50vh;
+}
+img{
+    width:50vw;
+    height:50vh;
+}
+nav{
+    display:flex;
+    flex-direction: row;
+    gap:1rem;
+    padding: .25rem;
+    align-items: center;
+    justify-content: center;
+}
+nav> button,label{
+    font:inherit;
+    border:none;
+    background-color: beige;
+    color: #333;
+    padding:0.5rem;
+    border-radius: 5px;
+}
+input[type=file]{
+    display:none;
+}
+nav> button:hover,label:hover{
+    background-color: orange;
+    color: #333;
+
+}
+nav> button.isactive, label.isactive{
+    background-color: green;
+    color:white;
+}
+#content{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+footer{
+    text-align: center;
+    font-size: 1.25rem;
+    padding: .5rem;
+}
+
+#stopBtn.isactive{
+    background-color: red;
+    color:white;
+}
+#imageToPredict{
+    display:none;
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Image Classification</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.5.0/lib/p5.js"></script>
+    <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+    <script src="js/controls.js"></script>
+    <script defer src="js/main.js"></script>
+  </head>
+
+  <body>
+    <header>
+        <h1>Machine learning using MobileNet</h1>
+    </header>
+    <nav>
+            <input type="file" name="file" id="imageFile" onchange="imageButton(event)">
+            <label id="imageBtn" for="imageFile" >From Image</label>
+            <button id="videoBtn" class="" onclick="videoButton()">From Video</button>
+            <button id="drawBtn" class="" onclick="drawButton()">From Drawing</button>
+            <button id="stopBtn" class="" onclick="stopButton()">stop</button>
+    </nav>
+    <section id="content">
+    </section>
+    <footer>
+        <div id="statusbar"></div>
+    </footer>
+    <img src="" alt="" id="imageToPredict">
+  </body>
+</html>
