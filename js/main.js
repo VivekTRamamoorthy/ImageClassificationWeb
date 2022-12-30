@@ -11,13 +11,19 @@ let stopMode = false
 let canvas
 
 function setup(){
-    let p5canvas = createCanvas(640,480);
+    let canvasWidth = Math.min(640,window.innerWidth-5)
+    let canvasHeight = Math.min(480,window.innerHeight - 300)
+    let p5canvas = createCanvas(canvasWidth,canvasHeight);
+   
 
     background(0)
     p5canvas.parent('content')
     canvas = p5canvas.canvas
+    canvas.addEventListener('touchmove',(event)=>{
+        event.preventDefault();
+    })
 
-    displayStatus('Model not loaded')
+    displayStatus('Loading model... Please wait.')
     
     mobilenet = ml5.imageClassifier('MobileNet',video,modelReady);
     

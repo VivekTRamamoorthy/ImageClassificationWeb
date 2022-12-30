@@ -72,7 +72,7 @@ function stopButton(){
     fill(255)
     strokeWeight(2)
     textAlign('center')
-    textSize(32)
+    textSize(canvas.height/30)
     text('Select a mode to continue', width/2,height/2)
     
 }
